@@ -22,6 +22,7 @@
 		BB1955C5192BA37C00B9F18E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1955A4192BA37B00B9F18E /* UIKit.framework */; };
 		BB1955CD192BA37C00B9F18E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB1955CB192BA37C00B9F18E /* InfoPlist.strings */; };
 		BB1955CF192BA37C00B9F18E /* Iphone1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1955CE192BA37C00B9F18E /* Iphone1Tests.m */; };
+		BB1955D9192BA6B900B9F18E /* iphone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BB1955D8192BA6B900B9F18E /* iphone.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		BB1955CA192BA37C00B9F18E /* Iphone1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Iphone1Tests-Info.plist"; sourceTree = "<group>"; };
 		BB1955CC192BA37C00B9F18E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BB1955CE192BA37C00B9F18E /* Iphone1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Iphone1Tests.m; sourceTree = "<group>"; };
+		BB1955D8192BA6B900B9F18E /* iphone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iphone.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		BB1955A6192BA37B00B9F18E /* Iphone1 */ = {
 			isa = PBXGroup;
 			children = (
+				BB1955D8192BA6B900B9F18E /* iphone.jpg */,
 				BB1955AF192BA37B00B9F18E /* CCAppDelegate.h */,
 				BB1955B0192BA37C00B9F18E /* CCAppDelegate.m */,
 				BB1955B2192BA37C00B9F18E /* Main_iPhone.storyboard */,
@@ -203,6 +206,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "University of Cincinnati";
 				TargetAttributes = {
+					BB19559C192BA37B00B9F18E = {
+						DevelopmentTeam = 42G3Y7YM5F;
+					};
 					BB1955C0192BA37C00B9F18E = {
 						TestTargetID = BB19559C192BA37B00B9F18E;
 					};
@@ -234,6 +240,7 @@
 			files = (
 				BB1955B7192BA37C00B9F18E /* Main_iPad.storyboard in Resources */,
 				BB1955BC192BA37C00B9F18E /* Images.xcassets in Resources */,
+				BB1955D9192BA6B900B9F18E /* iphone.jpg in Resources */,
 				BB1955B4192BA37C00B9F18E /* Main_iPhone.storyboard in Resources */,
 				BB1955AB192BA37B00B9F18E /* InfoPlist.strings in Resources */,
 			);
@@ -391,10 +398,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Iphone1/Iphone1-Prefix.pch";
 				INFOPLIST_FILE = "Iphone1/Iphone1-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -404,10 +414,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Iphone1/Iphone1-Prefix.pch";
 				INFOPLIST_FILE = "Iphone1/Iphone1-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -471,6 +484,7 @@
 				BB1955D4192BA37C00B9F18E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB1955D5192BA37C00B9F18E /* Build configuration list for PBXNativeTarget "Iphone1Tests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +493,7 @@
 				BB1955D7192BA37C00B9F18E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

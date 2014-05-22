@@ -26,4 +26,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)Button {
+    
+    NSString* name =[_TextMessage text];
+    //2. associate (or append) the user name to the text: hello,
+    NSString* message =[NSString stringWithFormat:@"hello, %@",name];
+    
+    [_labelMessage setText:message];
+    [_TextMessage resignFirstResponder];
+    _TextMessage.clearButtonMode = UITextFieldViewModeWhileEditing;
+   
+
+}
 @end

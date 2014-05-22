@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface CCViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UITextField *TextMessage;
+@property (strong, nonatomic) IBOutlet UILabel *labelMessage;
+- (IBAction)Button;
 
 @end
